@@ -1,0 +1,73 @@
+@font-face {
+  font-family: RobotoBolder;
+  src: url("../src/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("../src/Roboto-Light.ttf");
+}
+* {
+  font-family: RobotoLight;
+  overflow-x: hidden;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main h1 {
+  font-family: RobotoBolder;
+}
+
+.navbar-brand {
+  font-family: RobotoBolder;
+}
+
+.navLink {
+  position: relative;
+  text-align: start;
+  color: black;
+  text-decoration: none;
+  color: white;
+}
+
+.navLink::before {
+  content: "";
+  border: 1px solid #212429;
+  position: absolute;
+  transition: all 0.4s;
+  bottom: 0;
+  width: 0px;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 15px;
+}
+
+.nav-item:hover ::before {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.arrowDown {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.disc {
+  font-size: 12px;
+  text-overflow: clip;
+}
+
+#servises .main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#servises .main-content-wrapper .options {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
