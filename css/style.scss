@@ -19,6 +19,7 @@ $main_font: RobotoLight;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('/img/animal.gif');
   h1 {
     font-family: $bolder_font;
   }
@@ -42,9 +43,7 @@ $main_font: RobotoLight;
   bottom: 0;
   width: 0px;
 }
-.nav-item:not(:first-child) {
-  margin-left: 15px;
-}
+
 .nav-item:hover ::before {
   width: 100%;
   border: 1px solid white;
@@ -56,7 +55,9 @@ $main_font: RobotoLight;
   cursor: pointer;
 }
 .disc {
-  font-size: 12px;
+  font-size: 18px;
+  width: 1100px;
+  margin-top: 20px;
 
   text-overflow: clip;
 }
@@ -69,5 +70,17 @@ $main_font: RobotoLight;
     .options {
       text-align: center;
     }
+  }
+}
+
+#servises{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width:990px) {
+  .nav-item:not(:first-child) {
+    margin-left: 20px;
   }
 }
