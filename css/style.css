@@ -138,7 +138,7 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sliderBox {
@@ -155,4 +155,4 @@ swiper-slide img {
 
 .tableBox {
   align-self: flex-end;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
